@@ -1,0 +1,206 @@
+{
+  "users": [
+    {
+      "id": "u-1",
+      "name": "Alex Rivera",
+      "email": "alex@example.com",
+      "password_hash": "$2a$10$uYeYvOF/sNfS.4o3.wGVOeYchNBcEHr/s/SykEgr2YhTdPM55vA92",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "created_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "u-2",
+      "name": "Sarah Chen",
+      "email": "sarah@example.com",
+      "password_hash": "$2a$10$uYeYvOF/sNfS.4o3.wGVOeYchNBcEHr/s/SykEgr2YhTdPM55vA92",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=250&q=80",
+      "created_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "u-3",
+      "name": "Michael Vance",
+      "email": "mike@example.com",
+      "password_hash": "$2a$10$uYeYvOF/sNfS.4o3.wGVOeYchNBcEHr/s/SykEgr2YhTdPM55vA92",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+      "created_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "u-068c236c",
+      "name": "srgerg",
+      "email": "roshan09@gmail.com",
+      "password_hash": "$2a$10$UysjCepkL1A.x0eD.c3ICeKR08xXD/5QQ5vCrGMIoiLlxbs0wd7Pe",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=srgerg",
+      "created_at": "2026-08-03T08:44:59.629Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p-1",
+      "name": "TaskSync Platform Revamp",
+      "description": "Redesigning the primary collaborative workspace UI & real-time messaging pipeline.",
+      "created_by": "u-1",
+      "created_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "p-2",
+      "name": "Mobile App Launch v2.0",
+      "description": "Cross-platform iOS and Android companion app development for project tracking.",
+      "created_by": "u-2",
+      "created_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "p-c7a94766",
+      "name": "ffr",
+      "description": "t",
+      "created_by": "u-068c236c",
+      "created_at": "2026-08-03T08:45:29.879Z"
+    }
+  ],
+  "project_members": [
+    {
+      "id": "pm-1",
+      "project_id": "p-1",
+      "user_id": "u-1",
+      "role": "owner",
+      "joined_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "pm-2",
+      "project_id": "p-1",
+      "user_id": "u-2",
+      "role": "member",
+      "joined_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "pm-3",
+      "project_id": "p-1",
+      "user_id": "u-3",
+      "role": "member",
+      "joined_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "pm-4",
+      "project_id": "p-2",
+      "user_id": "u-2",
+      "role": "owner",
+      "joined_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "pm-5",
+      "project_id": "p-2",
+      "user_id": "u-1",
+      "role": "member",
+      "joined_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "pm-916aa52e",
+      "project_id": "p-c7a94766",
+      "user_id": "u-068c236c",
+      "role": "owner",
+      "joined_at": "2026-08-03T08:45:29.879Z"
+    },
+    {
+      "id": "pm-59d118cb",
+      "project_id": "p-c7a94766",
+      "user_id": "u-1",
+      "role": "member",
+      "joined_at": "2026-08-03T08:45:29.879Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-1",
+      "project_id": "p-1",
+      "title": "Setup WebSocket Real-Time Infrastructure",
+      "description": "Implement Socket.IO event channels for board drag-and-drop actions and active presence indicators.",
+      "status": "done",
+      "priority": "urgent",
+      "assigned_to": "u-1",
+      "created_by": "u-1",
+      "due_date": "2026-08-10",
+      "position": 0,
+      "created_at": "2026-08-01T08:43:45.985Z",
+      "updated_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "t-2",
+      "project_id": "p-1",
+      "title": "Design Dark Mode Glassmorphism Theme",
+      "description": "Build a responsive CSS design system featuring floating modals, neon accents, and smooth transitions.",
+      "status": "in_progress",
+      "priority": "high",
+      "assigned_to": "u-2",
+      "created_by": "u-1",
+      "due_date": "2026-08-15",
+      "position": 0,
+      "created_at": "2026-08-02T08:43:45.985Z",
+      "updated_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "t-3",
+      "project_id": "p-1",
+      "title": "Implement Task Comments & Activity Log",
+      "description": "Allow users to publish rich comments inside task modals with real-time updates.",
+      "status": "review",
+      "priority": "medium",
+      "assigned_to": "u-3",
+      "created_by": "u-2",
+      "due_date": "2026-08-12",
+      "position": 0,
+      "created_at": "2026-08-03T08:43:45.985Z",
+      "updated_at": "2026-08-03T08:43:45.985Z"
+    },
+    {
+      "id": "t-4",
+      "project_id": "p-1",
+      "title": "User Invitation & Group Access Controls",
+      "description": "Create user search API and modal for adding existing platform users to project boards.",
+      "status": "todo",
+      "priority": "medium",
+      "assigned_to": "u-1",
+      "created_by": "u-2",
+      "due_date": "2026-08-18",
+      "position": 0,
+      "created_at": "2026-08-03T08:43:45.985Z",
+      "updated_at": "2026-08-03T08:43:45.985Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "c-1",
+      "task_id": "t-2",
+      "user_id": "u-1",
+      "content": "I've drafted the glassmorphism color variables. Let's make sure hover states feel snappy!",
+      "created_at": "2026-08-03T05:43:45.985Z"
+    },
+    {
+      "id": "c-2",
+      "task_id": "t-2",
+      "user_id": "u-2",
+      "content": "Looks fantastic! I added the custom scrollbar and modal overlay animations.",
+      "created_at": "2026-08-03T07:43:45.985Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-1",
+      "user_id": "u-2",
+      "message": "Alex assigned you to task \"Design Dark Mode Glassmorphism Theme\"",
+      "type": "assignment",
+      "project_id": "p-1",
+      "task_id": "t-2",
+      "is_read": true,
+      "created_at": "2026-08-03T06:43:45.985Z"
+    },
+    {
+      "id": "n-32b3d0c4",
+      "user_id": "u-1",
+      "message": "srgerg added you to project \"ffr\"",
+      "type": "project_invite",
+      "project_id": "p-c7a94766",
+      "task_id": null,
+      "is_read": false,
+      "created_at": "2026-08-03T08:45:29.887Z"
+    }
+  ]
+}
